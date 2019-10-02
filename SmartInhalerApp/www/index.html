@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" href="css/jqx.base.css" type="text/css" />
+        <script type='text/javascript' src="js/jquery-1.11.2.js"></script>
+
+        <script type="text/javascript" src="js/jqxcore.js"></script>
+
+        <script type="text/javascript" src="js/jqxdraw.js"></script>
+
+        <script type="text/javascript" src="js/jqxchart.core.js"></script>
+
+        <script type="text/javascript" src="js/jqxdata.js"></script>
+
+        <div>
+        <title style="background-color: blue; border: 2px solid black; padding: 10px">IntelHealth</title>
+        <style>
+        @media only screen and (max-width: 350px){
+            #graphContainer { width: 90%; }
+        }
+        @media all and (max-width: 300px){
+        </style>
+        </div>
+    </head>
+    <body>
+        <div class="app">
+            <div>
+            <h2 style="text-align: center">Pressure BLE</h2>
+            </div>
+            <div id="selectPage">
+                <p style="text-align: center; font-weight: bold; font-size: 110%;">Select one of them</p><br/>
+                <button id="inPascal" style="margin:auto; display: block;">Pa</button><br/>
+                <button id="inLiters" style="margin:auto; display: block;">L/S</button> 
+            </div>
+            <div id="mainPage">
+                <ul id="deviceList">                    
+                </ul>
+                <button id="refreshButton">Refresh</button><br/>
+            </div>
+            <div id="detailPage">
+                <div id="resultDiv" style="padding:10 px 20 px 20 px 10 px;"></div>            
+                <div id="graphContainer" class="my-breakpoint ui-block-a" style="height: 400px; width: 320px; margin: auto;"></div>
+                <button id="disconnectButton">Disconnect</button> <br/> 
+                <div id="info">Connection info</div>
+                <button id="sendButton">Send</button>                
+            </div>
+
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js">
+        </script>
+        <script>
+        </script>
+    </body>
+    </html/>
